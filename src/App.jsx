@@ -27,11 +27,16 @@ function App() {
     }
 
     //generates password in length from 0 to including 12
-    let password = '';
-    for (let i = 0; i < 12; i++) {
-      password += characters.charAt(Math.floor(Math.random() * characters.length));
+    if (characters === '') {
+      setPassword('Please choose at least one checkbox');
+    } else {
+      // generate password
+      let password = '';
+      for (let i = 0; i < 12; i++) {
+        password += characters.charAt(Math.floor(Math.random() * characters.length));
+      }
+      setPassword(password);
     }
-    setPassword(password);
   }
 
   return (
