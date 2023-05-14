@@ -2,7 +2,7 @@ body{
   margin: 0;
   padding: 0;
 }
-
+/* a mainc container style */
 .container{
   background-color: rgb(23, 17, 75);
   background: linear-gradient(45deg, rgb(47, 47, 150), rgb(23, 17, 75));
@@ -13,7 +13,7 @@ body{
   overflow: hidden;
 }
 
-
+/* random password generator container style */
 .rnd-number-generator-container{
   width: 690px;
   height: 460px;
@@ -24,26 +24,7 @@ body{
   color: white;
 }
 
-
-.min-number{
-  width: 100%;
-  height: 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-}
-
-.max-number{
-  width: 100%;
-  height: 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
+/* a check boxes style start */
 .checkbox1{
   width: 100%;
   display: flex;
@@ -68,7 +49,9 @@ body{
   height: 20px;
 }
 
+/* checkbox styles end */
 
+/* removing black border after clicking on inut field and changes inputs placeholders color */
 input::placeholder{
   color: white;
 }
@@ -77,6 +60,7 @@ input:focus{
   outline: none;
 }
 
+/* a results fields style */
 .result{
   width: 100%;
   height: 70px;
@@ -87,6 +71,7 @@ input:focus{
   margin-top: 50px;
 }
 
+/* a result container style */
 .result-container{
   width: 200px;
   height: 30px;
@@ -99,6 +84,7 @@ input:focus{
   color: white;
 }
 
+/* result generating buttons style */
 .generate-button{
   width: 200px;
   height: 30px;
@@ -111,6 +97,7 @@ input:focus{
   transition: all 0.3s;
 }
 
+/* buttons hover effect applies only after hover */
 .generate-button:hover{
   cursor: pointer;
   transform: scale(1.1);
@@ -123,6 +110,7 @@ input:focus{
   }
 }
 
+/* applies only after hover */
 .result input:hover{
   cursor: default;
 }
